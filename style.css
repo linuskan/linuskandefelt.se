@@ -13,7 +13,6 @@ a {
     text-decoration: none;
     margin-right: 10px;
     color: white;
-    font-size: 2rem;
 }
 
 h1 {
@@ -32,63 +31,154 @@ a:hover {
     color: lightgray;
 }
 
-nav {
-    display: flex;
-}
-
 li {
     margin-bottom: 4px;
 }
 
 /* MOBILE */
-@media (max-width: 480px) {
+@media (max-width: 460px) {
+    
+    nav {
+        text-align: center;
+    }
 
+    #logoStyle {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .menuLink {
+        font-size: 1.2rem;
+    }
+
+    .navLinks {
+        margin-top: 10px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        padding: 5px 0;
+    }
+
+    .cv-section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 8px auto;
+    }
 }
 
 /* TABLETS */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 461px) and (max-width: 768px) {
 
+    a {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    /* ID's */
+    #topMenu {
+        border-bottom: 1px solid lightgray;
+        flex-direction: row;
+        vertical-align: text-bottom;
+        align-items: baseline;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    
+    #logoStyle {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        margin-left: 5px;
+    }
+
+    /* CLASSES */
+    .menuLink {
+        font-size: 1.1rem;
+        padding: 0 5px;
+    }
+
+    .cv-section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        max-width: 450px;
+        margin: 8px auto;
+    }
+
+    .navLinks {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 22px;
+    }
 }
 
 /* DESKTOP */
 @media (min-width: 769px) {
+    
+    a {
+        font-size: 2rem;
+    }
 
-}
+    nav {
+        display: flex;
+    }
 
-/* ID's */
-#topMenu {
-    border-bottom: 1px solid lightgray;
-    flex-direction: row;
-    vertical-align: text-bottom;
-    align-items: baseline;
-    width: 100%;
-    padding-bottom: 5px;
-}
-#logoStyle {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
-    margin-left: 5px;
-}
+    #experienceBlocks {
+        display: flex;
+        position: relative;
+    }
 
-/* CLASSES */
-.menuLink {
-    font-size: 1.1rem;
-    padding: 0 5px;
-}
+    #studies, #workLife, #software {
+        margin-right: 10px;
+    }
 
-.cv-section {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    max-width: 450px;
-    margin: 8px auto;
-}
+    #studies, #workLife, #software, #interests {
+        vertical-align: top;
+        height: auto;
+    }
 
-.navLinks {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 22px;
+    /* ID's */
+    #topMenu {
+        border-bottom: 1px solid lightgray;
+        flex-direction: row;
+        vertical-align: text-bottom;
+        align-items: baseline;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    #logoStyle {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        margin-left: 5px;
+    }
+
+    /* CLASSES */
+    .menuLink {
+        font-size: 1.1rem;
+        padding: 0 5px;
+    }
+
+    .cv-section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        max-width: 450px;
+        margin: 8px auto;
+    }
+
+    .navLinks {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 22px;
+    }
 }
