@@ -1,17 +1,94 @@
-h1 {
-    color: antiquewhite;
-    font-family: nunito;
-    font-size: 2.5rem;
-    text-align: center;
+/* UNIVERSAL */
+html {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
-div {
+body {
     background-color: black;
-    margin: auto;
-    padding: 0.1rem;
 }
 
-p {
-    text-align: center;
+a {
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
     color: white;
+    font-size: 2rem;
+}
+
+h1 {
+    color: white;
+    margin: 8px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+nav {
+    display: flex;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+}
+
+/* TABLETS */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+
+}
+
+/* ID's */
+#topMenu {
+    border-bottom: 1px solid lightgray;
+    flex-direction: row;
+    vertical-align: text-bottom;
+    align-items: baseline;
+    width: 100%;
+    padding-bottom: 5px;
+}
+#logoStyle {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 5px;
+}
+
+/* CLASSES */
+.menuLink {
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+
+.cv-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 450px;
+    margin: 8px auto;
+}
+
+.navLinks {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 22px;
 }
